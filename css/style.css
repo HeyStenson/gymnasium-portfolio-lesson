@@ -141,7 +141,7 @@ table {
 /* ******************************************
 	Web Fonts
 ****************************************** */
-/*
+
 @font-face {
     font-family: 'Roboto Condensed Light';
     src: url('../fonts/robotocondensed-light-webfont.eot');
@@ -152,6 +152,33 @@ table {
     font-weight: normal;
     font-style: normal;
 }
-*/
+
+body {
+	font-family: 'RobotoCondensedLight', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* ******************************************
+	Print Rules
+****************************************** */
+
+@media print and (max-width: 8.5in) {
+	.portfolio {
+		float: left;
+		width: 45%;
+	}
+
+	.resume {
+		float: right;
+		width: 45%;
+	}
+
+	img {
+		width: 2in;
+	}
+
+	.colophon {
+		clear: both;
+	}
+}
 
 
